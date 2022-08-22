@@ -1,0 +1,46 @@
+{
+	"format": "3.0",
+	"replacements":
+	{
+		"remove_WEBVTT_literal":
+		{
+			"find": "WEBVTT",
+			"literal": true,
+			"name": "remove_WEBVTT_literal",
+			"replace": ""
+		},
+		"remove_empty_lines":
+		{
+			"find": "^\\n",
+			"name": "remove_empty_lines",
+			"replace": ""
+		},
+		"remove_line_endings":
+		{
+			"find": "\\n",
+			"multi_pass": true,
+			"name": "remove_line_endings",
+			"replace": " "
+		},
+		"remove_numbered_lines":
+		{
+			"find": "^(\\d)*?\\n",
+			"name": "remove_numbered_lines",
+			"replace": ""
+		},
+		"remove_timestamps":
+		{
+			"find": "^0.*.\\n",
+			"greedy": true,
+			"name": "remove_timestamps",
+			"replace": ""
+		},
+		"remove_v_tags":
+		{
+			"find": "(<v ->)|(</v>)",
+			"multi_pass": true,
+			"name": "remove_v_tags",
+			"replace": ""
+		}
+	}
+}

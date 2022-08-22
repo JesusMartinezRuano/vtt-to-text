@@ -1,0 +1,8 @@
+[
+  {
+    "caption": "Reg Replace: Format VTT",
+    "command": "reg_replace",
+    "args": {"replacements": ["remove_timestamps", "remove_numbered_lines","remove_empty_lines","remove_line_endings","remove_WEBVTT_literal","remove_v_tags"]
+    }
+  },
+]
